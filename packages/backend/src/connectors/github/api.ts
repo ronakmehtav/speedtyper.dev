@@ -90,4 +90,6 @@ export class GithubAuthAPI {
   }
 }
 
+export const githubAPI = new GithubAPI(process.env.GITHUB_ACCESS_TOKEN ?? "");
+
 export default GithubAPI;
